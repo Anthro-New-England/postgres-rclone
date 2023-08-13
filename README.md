@@ -15,3 +15,6 @@ You can create a base backup by running `/usr/local/bin/basebackup.sh` inside th
 container.
 
 Files are compressed with zstd before uploading.
+
+For other options, see the [postgres](https://hub.docker.com/_/postgres) image
+documentation.

@@ -1,4 +1,5 @@
-FROM postgres:15.3-alpine3.18
+ARG POSTGRES_VERSION=alpine
+FROM postgres:${POSTGRES_VERSION}
 RUN apk add zstd rclone
 COPY archive.sh restore.sh basebackup.sh /usr/local/bin/
 RUN chmod 0755 \

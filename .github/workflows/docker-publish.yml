@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         version:
-          - 16.3-alpine3.20
+          - 17.5-alpine3.22
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -61,6 +61,7 @@ jobs:
       matrix:
         version:
           - alpine
+          - 17-alpine
           - 16-alpine
           - 15-alpine
     runs-on: ubuntu-latest
